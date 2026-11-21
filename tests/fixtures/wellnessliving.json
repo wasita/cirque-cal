@@ -10,4 +10,6 @@
   {"dt_date":"2026-11-25 22:45:00","dtl_date":"2026-11-25 17:45:00","i_duration":75,"is_cancel":"0","k_class_period":"19000002","s_title":"CIRCUS Lyra: Level 1","url_book":"","html_description":"","i_book":1,"i_capacity":8,"a_staff":["333"],"a_search_tag":[]},
   {"dt_date":"2026-12-03 20:15:00","dtl_date":"2026-12-03 15:15:00","i_duration":60,"is_cancel":"0","k_class_period":"18947730","s_title":"*Handstands: Open Level (Off-Peak)","url_book":"","html_description":"","a_staff":["444"],"a_search_tag":[]},
   {"dt_date":"2026-12-05 17:00:00","dtl_date":"2026-12-05 12:00:00","i_duration":75,"is_cancel":"1","k_class_period":"19000003","s_title":"CIRCUS Lyra: Level 1","url_book":"","html_description":"","a_staff":["111"],"a_search_tag":[]}
+,
+  {"dt_date":"2026-12-06 20:00:00","dtl_date":"2026-12-06 15:00:00","i_duration":120,"is_cancel":"0","is_event":"1","k_class":"777","s_title":"Lyra Workshop","url_book":"","html_description":"","a_staff":["111"],"a_search_tag":[]}
  ]}

@@ -66,6 +66,7 @@ def test_cirque_feed_selection():
         ("atrium", "Open Pole / Circus"),
         ("om_factory", "CIRCUS Lyra: Level 1"),   # Jacob's; cancelled one dropped, Lexy's excluded
         ("om_factory", "CIRCUS Open Workout"),
+        ("om_factory", "Lyra Workshop"),          # event with no k_class_period
     ])
 
 
@@ -78,3 +79,8 @@ def test_ics_roundtrip_and_stable_uids():
     uids = {str(e["UID"]) for e in evs}
     assert "feather-82f1fb5d-e913-4acf-ba02-24c84f4269ed@cirque-cal" in uids   # same as the manual import
     assert all(u.endswith("@cirque-cal") for u in uids)
+
+
+def test_wellnessliving_event_without_class_period():
+    ws = by_title(om(), "Lyra Workshop")
+    assert len(ws) == 1 and ws[0].uid.startswith("wl-777-")

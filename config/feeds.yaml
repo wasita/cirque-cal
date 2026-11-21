@@ -1,6 +1,6 @@
 # Where the site is published (used to fall back to the last good data if a
 # studio's site breaks). GitHub Pages project URL:
-published_url: https://wasita.github.io/cirque-cal
+published_url: https://wasita.space/cirque-cal
 
 weeks_ahead: 5
 

@@ -3,7 +3,7 @@
 A self-updating calendar of NYC aerial / lyra classes, built from studio booking
 sites and published as an `.ics` feed you subscribe to in Google Calendar.
 
-**Feed:** https://wasita.github.io/cirque-cal/cirque.ics
+**Feed:** https://wasita.space/cirque-cal/cirque.ics
 
 ## How it works
 

@@ -77,8 +77,13 @@ class WellnessLivingAdapter:
         }
         out: dict[str, Session] = {}
         for s in raw.get("sessions") or []:
+            if not s.get("dt_date") or not s.get("s_title"):
+                continue
             start = _utc(s["dt_date"])
-            uid = f"wl-{s['k_class_period']}-{start:%Y%m%dT%H%M}@cirque-cal"
+            # Regular classes have k_class_period; events/workshops may only
+            # carry k_class or k_event. Fall back so odd items don't break the run.
+            sid = s.get("k_class_period") or s.get("k_event") or s.get("k_class") or abs(hash(s["s_title"]))
+            uid = f"wl-{sid}-{start:%Y%m%dT%H%M}@cirque-cal"
             cap, booked = s.get("i_capacity"), s.get("i_book")
             out[uid] = Session(
                 uid=uid,
