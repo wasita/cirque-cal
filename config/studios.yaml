@@ -1,0 +1,21 @@
+# One entry per studio. `platform` picks the adapter in cirque_cal/adapters/.
+#
+# levels: optional per-studio overrides, checked before the defaults in
+# normalize.py. Common scale: 0 = intro/101, 1 = level 1, 1.5, 2, 2.5 = "2/3", ...
+studios:
+  om_factory:
+    name: OM Factory
+    platform: wellnessliving
+    slug: om_factory_nyc
+    business_id: 289484
+    class_tab: 22437          # "All Classes" tab
+    address: "873 Broadway, 2nd Fl, New York, NY 10003"
+    levels:
+      - { pattern: "level\\s*2\\s*/\\s*3", level: 2.5 }
+      - { pattern: "level 1 & up", level: 1 }
+
+  atrium:
+    name: The Atrium
+    platform: feather
+    org_id: d6538005-1792-4175-b78c-05b3f16e92b1
+    address: "15-19 Decatur St, Suite 203, Ridgewood, NY 11385"

@@ -1,0 +1,19 @@
+[
+ {"id":"82f1fb5d-e913-4acf-ba02-24c84f4269ed","name":"Lyra 101","start_at":"2026-11-24T22:30:00.000Z","end_at":"2026-11-24T23:45:00.000Z","description":"<p>Aerial Lyra/Hoop for absolute beginners !</p><p>No Pre-Requisites.</p>","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,"num_tickets_available":8,
+  "instructors":[{"full_name":"Jacob McKee","user_id":"069b6753-789d-4b47-8e16-856765fa39c6"}],
+  "tags":[{"name":"Beginner","deleted_at":null},{"name":"Lyra","deleted_at":null},{"name":"Circus","deleted_at":null}]},
+ {"id":"d000742e-3140-4764-a024-fe180c809b9e","name":"Lyra 1","start_at":"2026-11-25T01:30:00.000Z","end_at":"2026-11-25T02:45:00.000Z","description":"","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,"num_tickets_available":3,
+  "instructors":[{"full_name":"Jacob McKee"}],"tags":[{"name":"Lyra","deleted_at":null}]},
+ {"id":"5bda78cc-ba82-4057-9478-605519f7bab1","name":"Lyra 2","start_at":"2026-11-29T23:15:00.000Z","end_at":"2026-11-30T00:30:00.000Z","description":"","cancelled_at":"2026-11-17T22:13:58.604Z","status":"cancelled","is_private":false,"deleted_at":null,
+  "instructors":[{"full_name":"Jacob McKee"}],"tags":[{"name":"Lyra","deleted_at":null}]},
+ {"id":"2670da39-e6a2-4d94-b697-a4ff1d98b9d8","name":"Hammock (All lvls)","start_at":"2026-11-20T01:15:00.000Z","end_at":"2026-11-20T02:30:00.000Z","description":"","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,
+  "instructors":[{"full_name":"Jacob McKee"}],"tags":[{"name":"Hammock","deleted_at":null}]},
+ {"id":"9a951a38-a302-4b75-8396-07b38550aa5e","name":"Open Circus","start_at":"2026-11-24T20:00:00.000Z","end_at":"2026-11-24T22:00:00.000Z","description":"<p>1 hour of self guided apparatus work.</p>","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,
+  "instructors":[],"tags":[{"name":"Lyra","deleted_at":null},{"name":"Silks","deleted_at":null},{"name":"Circus","deleted_at":null}]},
+ {"id":"9ba51411-2918-43f3-acb5-0612fc383683","name":"Open Pole / Circus","start_at":"2026-11-28T21:15:00.000Z","end_at":"2026-11-28T22:15:00.000Z","description":"","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,
+  "instructors":[],"tags":[{"name":"No Instructor","deleted_at":null},{"name":"Pole","deleted_at":null},{"name":"Lyra","deleted_at":null}]},
+ {"id":"465ea615-c271-49f0-a4bc-17e30c89baea","name":"Open Pole","start_at":"2026-11-24T18:00:00.000Z","end_at":"2026-11-24T20:00:00.000Z","description":"","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,
+  "instructors":[],"tags":[{"name":"Open Studio","deleted_at":null},{"name":"Pole","deleted_at":null}]},
+ {"id":"7a7dd890-b5ed-408d-94f3-7bc6c2c02c98","name":"Night Owl Hours","start_at":"2026-11-24T03:00:00.000Z","end_at":"2026-11-24T12:30:00.000Z","description":"","cancelled_at":null,"status":"active","is_private":false,"deleted_at":null,
+  "instructors":[],"tags":[{"name":"Open Studio","deleted_at":null},{"name":"Pole","deleted_at":null}]}
+]

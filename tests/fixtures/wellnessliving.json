@@ -1,0 +1,13 @@
+{"staff": {
+  "111": {"s_name":"Jacob","s_surname":"McKee","text_name_full":"Jacob McKee"},
+  "222": {"s_name":"Laura","s_surname":"Doyle","text_name_full":"Laura Doyle"},
+  "333": {"s_name":"Lexy","s_surname":"Boward","text_name_full":"Lexy Boward"},
+  "444": {"s_name":"Ed","s_surname":"Liu","text_name_full":"Ed Liu"}},
+ "sessions": [
+  {"dt_date":"2026-11-28 17:00:00","dtl_date":"2026-11-28 12:00:00","i_duration":75,"is_cancel":"0","k_class_period":"19000001","s_title":"CIRCUS Lyra: Level 1","url_book":"https://app.wellnessliving.com/rs/book-process.html?k_class_period=19000001","html_description":"<p>Prerequisites: 101</p>","i_book":5,"i_capacity":8,"a_staff":["111"],"a_search_tag":[]},
+  {"dt_date":"2026-11-28 17:00:00","dtl_date":"2026-11-28 12:00:00","i_duration":75,"is_cancel":"0","k_class_period":"19000001","s_title":"CIRCUS Lyra: Level 1","url_book":"","html_description":"","i_book":5,"i_capacity":8,"a_staff":["111"],"a_search_tag":[]},
+  {"dt_date":"2026-11-23 19:00:00","dtl_date":"2026-11-23 14:00:00","i_duration":120,"is_cancel":"0","k_class_period":"19140391","s_title":"CIRCUS Open Workout","url_book":"https://x","html_description":"","i_book":0,"i_capacity":10,"a_staff":["222"],"a_search_tag":[]},
+  {"dt_date":"2026-11-25 22:45:00","dtl_date":"2026-11-25 17:45:00","i_duration":75,"is_cancel":"0","k_class_period":"19000002","s_title":"CIRCUS Lyra: Level 1","url_book":"","html_description":"","i_book":1,"i_capacity":8,"a_staff":["333"],"a_search_tag":[]},
+  {"dt_date":"2026-12-03 20:15:00","dtl_date":"2026-12-03 15:15:00","i_duration":60,"is_cancel":"0","k_class_period":"18947730","s_title":"*Handstands: Open Level (Off-Peak)","url_book":"","html_description":"","a_staff":["444"],"a_search_tag":[]},
+  {"dt_date":"2026-12-05 17:00:00","dtl_date":"2026-12-05 12:00:00","i_duration":75,"is_cancel":"1","k_class_period":"19000003","s_title":"CIRCUS Lyra: Level 1","url_book":"","html_description":"","a_staff":["111"],"a_search_tag":[]}
+ ]}

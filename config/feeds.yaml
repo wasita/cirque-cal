@@ -1,0 +1,26 @@
+# Where the site is published (used to fall back to the last good data if a
+# studio's site breaks). GitHub Pages project URL:
+published_url: https://wasita.github.io/cirque-cal
+
+weeks_ahead: 5
+
+# Each feed is one .ics file = one calendar you can subscribe to.
+# A session is included if it matches ANY rule under `include`;
+# a rule matches if ALL its conditions match.
+#
+# Rule conditions:
+#   studios:      [om_factory, atrium]
+#   kind:         class | open
+#   instructors:  ["Jacob McKee"]        (case-insensitive exact name)
+#   apparatus:    [lyra, silks, hammock, straps, trapeze, pole, bungee, aerial_yoga]
+#   level_min / level_max: numbers on the common scale (0 = 101/intro)
+#   title:        regex on the class title
+#   days:         [mon, tue, wed, thu, fri, sat, sun]
+# Cancelled sessions are dropped unless `include_cancelled: true`.
+feeds:
+  - file: cirque.ics
+    name: Cirque
+    include:
+      - instructors: ["Jacob McKee"]
+        apparatus: [lyra]
+      - kind: open

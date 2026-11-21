@@ -1,0 +1,58 @@
+name: Build calendar feed
+
+on:
+  schedule:
+    - cron: "17 10 * * *"   # daily, ~5:17am New York
+  workflow_dispatch:        # "Run workflow" button
+  push:
+    branches: [main]
+    paths: ["cirque_cal/**", "config/**", "pyproject.toml", ".github/workflows/build.yml"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: |
+          uv sync
+          uv run playwright install --with-deps chromium
+
+      - name: Tests
+        run: uv run pytest -q
+
+      - name: Scrape + build feed
+        run: uv run cirque-cal --out site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      # Deploy first (so working studios still update), then go red so GitHub
+      # emails you if any studio failed and fell back to its previous data.
+      - name: Report studio failures
+        run: |
+          if [ -f site/FAILED ]; then
+            echo "::error::Some studios failed to scrape:"; cat site/FAILED; exit 1
+          fi
